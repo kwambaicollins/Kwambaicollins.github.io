@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dev.Kwambai Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.Kwambai Portfolio Website</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
         
-
+        <!-- Navigation -->
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
         
-        
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="Style.css">
-        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
-
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Introduction-->
-
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Introduction Section -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
                 Hey, I am <strong>Kwambai Collins</strong>
@@ -46,38 +42,37 @@
             <img src="Photos/IMG-20210810-WA0018.png" class="intro__img">
         </section>
         
-        <!--My services-->
+        <!-- Services Section -->
         <section class="my-services" id="services">
-            
-            <h2 class="section__title section__title--services"> What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Coding: Using pertinent frameworks and best practices, write clear, effective, and maintainable Python code.
-                        Testing and debugging: To verify functionality and find and correct errors, unit tests, integration tests, and user acceptability testing should be implemented.
-                        Deployment: Ensuring appropriate configuration and security while packaging and launching the program in a production setting.</p>
-                </div><!-- / service -->
+            <h2 class="section__title section__title--services">What I do</h2>
+        
+        <!-- Service 1 -->
+        <h3>Design + Development</h3>
+            <p>Coding: Using pertinent frameworks and best practices, write clear, effective, and maintainable Python code.
+            Testing and debugging: To verify functionality and find and correct errors, unit tests, integration tests, and user acceptability testing should be implemented.
+            Deployment: Ensuring appropriate configuration and security while packaging and launching the program in a production setting.</p>
 
-                <div class="service">
-                    <h3>Machine Learning + AI</h3>
-                    <p>Investigating and picking the best machine learning algorithms: Selecting the best algorithms according to the nature of the problem, the properties of the data, and the intended result.
-                        Creating and designing machine learning systems: constructing the workflow and architecture needed for ML model deployment, management, and training.
-                        Training machine learning models: Which involves feeding pre-processed data into selected algorithms so they can learn and forecast.
-                        Monitoring model performance: that entails keeping track on, assessing, and pinpointing opportunities for improvement in the effectiveness of the deployed model.</p>
-                </div> <!-- / service -->
                 
-                <div class="service">
-                    <h3>Data Manipulation + Management</h3>
-                    <p>Data exploration and visualization: Tools like Pandas and Matplotlib enables exploration of  data through descriptive statistics, data aggregation, and creating various visualizations (histograms, scatter plots, etc.) to identify patterns and trends.
-                        Extracting data from various sources: By use of Python I can connect to databases, APIs, and web scraping tools to retrieve data in different formats (CSV, JSON, Excel.
-                        Seamless integration: Python's versatility allows smooth integration with other data analysis and visualization tools like R, SQL, and Tableau, I can leverage the strengths of each platform for a comprehensive workflow.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+                <!-- Service 2 -->
+
+        <h3>Machine Learning + AI</h3>
+            <p>Investigating and picking the best machine learning algorithms: Selecting the best algorithms according to the nature of the problem, the properties of the data, and the intended result.
+            Creating and designing machine learning systems: constructing the workflow and architecture needed for ML model deployment, management, and training.
+            Training machine learning models: Which involves feeding pre-processed data into selected algorithms so they can learn and forecast.
+            Monitoring model performance: that entails keeping track on, assessing, and pinpointing opportunities for improvement in the effectiveness of the deployed model.</p>
             
+                
+                <!-- Service 3 -->
+        <h3>Data Manipulation + Management</h3>
+            <p>Data exploration and visualization: Tools like Pandas and Matplotlib enables exploration of  data through descriptive statistics, data aggregation, and creating various visualizations (histograms, scatter plots, etc.) to identify patterns and trends.
+            Extracting data from various sources: By use of Python I can connect to databases, APIs, and web scraping tools to retrieve data in different formats (CSV, JSON, Excel.
+            Seamless integration: Python's versatility allows smooth integration with other data analysis and visualization tools like R, SQL, and Tableau, I can leverage the strengths of each platform for a comprehensive workflow.</p>
+
+            </div>
             <a href="#work" class="btn">My Work</a>
         </section>
         
-        <!--About Kwambai-->
+        <!-- About Me Section -->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who am I?</h2>
             <p class="section__subtitle section__subtitle--about">Software Developer based in Kenya</p>
@@ -90,96 +85,72 @@
             <img src="Photos/IMG-20210909-WA0005.jpg" alt="Collins taking a break after a long day of coding" class="about-me__img">
         </section>
 
-        <!--My Work-->
+        <!-- Portfolio Section -->
         <section class="my-work" id="work">
             <h2 class="section__title">My work</h2>
-            <p class="section__subtitle">A selecttion of my range of work</p>
+            <p class="section__subtitle">A selection of my range of work</p>
+            
+                <!-- Portfolio Items -->
+            <h1>1. My Hospital system</h1>
+                <p> This is a simple Java software application designed to automate and streamline the management of hospital
+                 operations, including patient information, doctor schedules, appointments, billing, and various other administrative tasks. 
+                 It typically features a graphical user interface built using Java.
+                </p>
+                 <img src="Photos\py2.jpeg" alt="" class="portfolio__img">
+                <a href="https://github.com/kwambaicollins/My-Hospital-System" class="portfolio__item">
+                View the project</a>
 
-            <div class="portfolio">
-             <!-- Portfolio item 09 -->
-             <a href="#" class="portfolio__item">
-                <img src="Photos\py9.jpeg" alt="" class="portfolio__img">
+            <h1>2. Luhn algorithm</h1>
+                <p> This is a simple JavaScript application that implements the Luhn algorithm, a checksum formula used to validate identification numbers, 
+                particularly credit card numbers. The application allows users to input a credit card number and checks its validity using the Luhn 
+                algorithm(also called the modulus 10 or mod 10 algorithm).
+                </p>
+                <a href="https://kwambaicollins.github.io/Luhn-Algorithm/point.html" class="portfolio__item">
+                View the project</a>
+
+            <h1>Artificial Inteligence</h1>
+            
+            <p> </p>
+            <a href="https://kwambaicollins.github.io/Force.d_2-Chatbot//templates/index.html" class="portfolio__item">
+            <img src="Photos\py7.jpeg" alt="" class="portfolio__img">
+            </a>
+
+            <a href="#" class="portfolio__item">
+            <img src="Photos\py9.jpeg" alt="" class="portfolio__img">
             </a>
                 
-                <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img src="Photos/py1.jpeg" alt="" class="portfolio__img">
-                </a>
+            <a href="#" class="portfolio__item">
+            <img src="Photos/py1.jpeg" alt="" class="portfolio__img">
+            </a>
                 
-                <!-- Portfolio item 03 -->
-                <a href="https://github.com/kwambaicollins/My-Hospital-System" class="portfolio__item">
-                    <img src="Photos\py2.jpeg" alt="" class="portfolio__img">
-                </a>
                 
-                <!-- Portfolio item 04 -->
-                <a href="#" class="portfolio__item">
-                    <img src="Photos\py3.jpeg" alt="" class="portfolio__img">
-                </a>
+            <a href="#" class="portfolio__item">
+            <img src="Photos\py3.jpeg" alt="" class="portfolio__img">
+            </a>
                 
-                <!-- Portfolio item 05 -->
-                <a href="#" class="portfolio__item">
-                    <img src="Photos\py4.jpeg" alt="" class="portfolio__img">
-                </a>
+            <a href="#" class="portfolio__item">
+            <img src="Photos\py4.jpeg" alt="" class="portfolio__img">
+            </a>
                 
-                <!-- Portfolio item 06 -->
-                <a href="https://kwambaicollins.github.io/Luhn-Algorithm/point.html" class="portfolio__item">
-                    <img src="Photos\py5.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="" class="portfolio__item">
-                    <img src="Photos\py6.jpeg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <div>
-                    <H1>Artificial Inteligence</H1>
-                    <p1>This is amazing</p1>
-                <a href="https://kwambaicollins.github.io/Force.d_2-Chatbot//templates/index.html" class="portfolio__item">
-                    <img src="Photos\py7.jpeg" alt="" class="portfolio__img">
-                </a>
-                </div>
-                <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
-                    <img src="Photos\py8.jpeg" alt="" class="portfolio__img">
-                </a>
-
-            </div>
+            <a href="" class="portfolio__item">
+            <img src="Photos\py6.jpeg" alt="" class="portfolio__img">
+            </a>    
         </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <a href="kwambaicollins3@gmail.com" class="footer-link">kwambaicollins3@gmail.com</a>
         
-        
-        <!-- Footer -->
-        <footer>
-             <!-- Kwambai email address -->
-             <a href="kwambaicollins3@gmail.com" class="footer-link">kwambaicollins3@gmail.com</a>
-             <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://kwambaicollins.github">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
-        <script src="index.js"></script>
-        
-    </body>
+    <script src="index.js"></script>
+</body>
 </html>
-        
-                
-                
